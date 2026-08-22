@@ -1,7 +1,7 @@
 ---
 name: markdown-negotiation
 type: content-negotiation
-description: Dribba serves a markdown representation of any page when the client sends Accept: text/markdown. HTML remains the default for browsers.
+description: "Dribba serves a markdown representation of any page when the client sends the Accept header text/markdown. HTML remains the default for browsers."
 ---
 
 # Markdown for Agents — Dribba
