@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dribba",
+  "version": "1.0.0",
+  "description": "Dribba's agent surfaces as a portable plugin: two remote MCP servers and seven skills describing how to read and operate dribba.com.",
+  "author": "Dribba <hola@dribba.com>",
+  "homepage": "https://dribba.com/developers",
+  "repository": "https://github.com/dribbaengineering/dribba",
+  "license": "MIT",
+  "keywords": ["dribba", "mcp", "skills", "agents", "api", "flutter", "openapi"]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "dribba",
+  "version": "1.0.0",
+  "description": "Official SDK and CLI for the Dribba public API: services, case studies, articles, jobs, company facts, pricing and a ballpark project estimator. No API key required.",
+  "keywords": [
+    "dribba",
+    "dribba-api",
+    "dribba-sdk",
+    "dribba-cli",
+    "api-client",
+    "mcp",
+    "agents",
+    "flutter",
+    "openapi"
+  ],
+  "homepage": "https://dribba.com/developers",
+  "bugs": {
+    "url": "https://github.com/dribbaengineering/dribba/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dribbaengineering/dribba.git"
+  },
+  "license": "MIT",
+  "author": "Dribba <hola@dribba.com> (https://dribba.com)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "types": "./index.d.ts",
+  "bin": {
+    "dribba": "./bin/dribba.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "bin/dribba.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
+}
