@@ -60,6 +60,9 @@ With this package:
 ```bash
 npx dribba services --table
 npx dribba estimate --platforms ios,android
+
+# Or as an MCP server, if your client only speaks stdio
+npx dribba-mcp
 ```
 
 Over MCP — two remote servers, Streamable HTTP, no auth:

@@ -25,6 +25,32 @@ npx dribba --help
 
 Add `--sandbox` to hit the frozen fixtures instead of production.
 
+## MCP server (stdio bridge)
+
+Dribba's MCP server is remote — Streamable HTTP at `https://dribba.com/mcp`. If
+your client only speaks stdio, this package ships the bridge:
+
+```json
+{
+  "mcpServers": {
+    "dribba": { "command": "npx", "args": ["-y", "dribba-mcp"] }
+  }
+}
+```
+
+```bash
+npx dribba-mcp            # product surface: 5 tools + llms.txt resources
+npx dribba-mcp --docs     # documentation surface: 4 tools
+```
+
+It forwards JSON-RPC and nothing else, so the tools, resources and protocol
+version are whatever the server declares — there is no second implementation to
+drift. If your client does speak Streamable HTTP, skip the bridge and point it
+straight at the URL.
+
+Verified with the official `@modelcontextprotocol/sdk` over stdio: connect,
+`tools/list`, `tools/call`, `resources/list`, `resources/read`.
+
 ## SDK
 
 ```bash

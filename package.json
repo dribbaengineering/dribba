@@ -1,6 +1,7 @@
 {
   "name": "dribba",
-  "version": "1.0.0",
+  "mcpName": "com.dribba/dribba",
+  "version": "1.1.0",
   "description": "Official SDK and CLI for the Dribba public API: services, case studies, articles, jobs, company facts, pricing and a ballpark project estimator. No API key required.",
   "keywords": [
     "dribba",
@@ -11,7 +12,10 @@
     "mcp",
     "agents",
     "flutter",
-    "openapi"
+    "openapi",
+    "mcp-server",
+    "modelcontextprotocol",
+    "stdio"
   ],
   "homepage": "https://dribba.com/developers",
   "bugs": {
@@ -32,12 +36,14 @@
   },
   "types": "./index.d.ts",
   "bin": {
-    "dribba": "./bin/dribba.js"
+    "dribba": "./bin/dribba.js",
+    "dribba-mcp": "./bin/dribba-mcp.js"
   },
   "files": [
     "index.js",
     "index.d.ts",
     "bin/dribba.js",
+    "bin/dribba-mcp.js",
     "README.md",
     "LICENSE"
   ],
