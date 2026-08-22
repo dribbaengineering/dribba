@@ -55,11 +55,11 @@ curl -H 'Accept: text/markdown' https://dribba.com/servicios
 curl "https://dribba.com/?mode=agent"
 ```
 
-With this package:
+With this package (not on npm yet — `npx` reads it from the repo):
 
 ```bash
-npx dribba services --table
-npx dribba estimate --platforms ios,android
+npx github:dribbaengineering/dribba services --table
+npx github:dribbaengineering/dribba estimate --platforms ios,android
 ```
 
 Over MCP — two remote servers, Streamable HTTP, no auth:

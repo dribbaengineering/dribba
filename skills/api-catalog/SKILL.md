@@ -10,7 +10,7 @@ Dribba exposes a small set of public endpoints for contact, job applications,
 budget estimates, and the conversational assistant. They are catalogued at:
 
 ```
-https://www.dribba.com/.well-known/api-catalog
+https://dribba.com/.well-known/api-catalog
 ```
 
 The resource returns `application/linkset+json` per RFC 9727 / RFC 9264.
@@ -31,7 +31,7 @@ It is not a data source. For data, call `/api/v1` (see the `rest-api` skill).
   10 minutes plus burst detection at 4 requests per 10 seconds.
 - No authentication is required; do not send credentials.
 - **Same-origin policy:** endpoints reject requests whose `Origin` is not
-  `https://www.dribba.com`. They are intended for the Dribba site itself and
+  `https://dribba.com`. They are intended for the Dribba site itself and
   for partners we've allow-listed — not for general agent automation. Use the
   markdown-negotiation skill to read page content instead.
 

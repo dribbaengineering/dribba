@@ -6,7 +6,7 @@ description: Dribba declares AI content usage preferences via Content-Signal dir
 
 # Content Signals — Dribba
 
-`https://www.dribba.com/robots.txt` includes `Content-Signal` directives that
+`https://dribba.com/robots.txt` includes `Content-Signal` directives that
 declare how AI systems may use Dribba content.
 
 

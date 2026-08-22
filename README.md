@@ -12,20 +12,31 @@ looking for the credentials page, there isn't one — see
 
 ## CLI
 
-Nothing to install:
+Nothing to install — `npx` runs it straight from this repo:
 
 ```bash
-npx dribba services --table
-npx dribba cases --limit 3 | jq -r '.items[].slug'
-npx dribba estimate --platforms ios,android --complexity complex
-npx dribba ask "flutter migration"
-npx dribba markdown /servicios
-npx dribba --help
+npx github:dribbaengineering/dribba services --table
+npx github:dribbaengineering/dribba cases --limit 3 | jq -r '.items[].slug'
+npx github:dribbaengineering/dribba estimate --platforms ios,android --complexity complex
+npx github:dribbaengineering/dribba ask "flutter migration"
+npx github:dribbaengineering/dribba markdown /servicios
+npx github:dribbaengineering/dribba --help
 ```
+
+Once installed (`npm i github:dribbaengineering/dribba`) the git spec drops and
+it is just `npx dribba services`. The package is not on npm yet, so a bare
+`npx dribba` resolves to nothing.
 
 Add `--sandbox` to hit the frozen fixtures instead of production.
 
 ## SDK
+
+```bash
+npm i github:dribbaengineering/dribba
+```
+
+The package name stays `dribba`, so the import does not change when it lands on
+npm:
 
 ```js
 import { Dribba } from "dribba";

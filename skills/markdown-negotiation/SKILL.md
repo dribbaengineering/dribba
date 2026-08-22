@@ -6,7 +6,7 @@ description: "Dribba serves a markdown representation of any page when the clien
 
 # Markdown for Agents — Dribba
 
-Any public page on `https://www.dribba.com` supports HTTP content negotiation
+Any public page on `https://dribba.com` supports HTTP content negotiation
 between HTML and Markdown.
 
 
@@ -26,7 +26,7 @@ markdown weighted equal to or higher than `text/html`):
 
 ```
 GET / HTTP/1.1
-Host: www.dribba.com
+Host: dribba.com
 Accept: text/markdown
 ```
 
