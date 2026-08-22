@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dribba"
+version = "1.0.1"
+description = "Official SDK and CLI for the Dribba public API: services, case studies, articles, jobs, company facts, pricing and a ballpark project estimator. No API key required."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Dribba", email = "hola@dribba.com" }]
+requires-python = ">=3.9"
+keywords = ["dribba", "api-client", "sdk", "cli", "mcp", "agents", "openapi", "flutter"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+# Sin dependencias: todo sale de la biblioteca estándar. Es lo que permite
+# `pip install dribba` en cualquier entorno sin arrastrar un árbol de paquetes.
+dependencies = []
+
+[project.urls]
+Homepage = "https://dribba.com/developers"
+Documentation = "https://dribba.com/docs"
+Repository = "https://github.com/dribbaengineering/dribba"
+Issues = "https://github.com/dribbaengineering/dribba/issues"
+Changelog = "https://github.com/dribbaengineering/dribba/releases"
+
+[project.scripts]
+dribba = "dribba.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dribba"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/dribba", "README.md", "LICENSE"]

@@ -54,8 +54,12 @@ Verified with the official `@modelcontextprotocol/sdk` over stdio: connect,
 ## SDK
 
 ```bash
-npm i dribba
+npm i dribba        # JavaScript / TypeScript
+pip install dribba  # Python 3.9+, same methods, also dependency-free
 ```
+
+The Python client lives in [`python/`](./python) and is published to PyPI as
+[`dribba`](https://pypi.org/project/dribba/).
 
 ```js
 import { Dribba } from "dribba";

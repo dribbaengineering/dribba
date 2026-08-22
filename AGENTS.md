@@ -55,7 +55,7 @@ curl -H 'Accept: text/markdown' https://dribba.com/servicios
 curl "https://dribba.com/?mode=agent"
 ```
 
-With this package:
+With this package (`npm i dribba`, or `pip install dribba` for the Python one):
 
 ```bash
 npx dribba services --table
